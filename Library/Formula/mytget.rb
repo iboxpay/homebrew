@@ -1,6 +1,5 @@
-
 class Mytget < Formula
-  desc "Mytget is a muti-thread downloader accelerator for GNU/Linux. "
+  desc "Mytget is a muti-thread downloader accelerator for GNU/Linux"
   homepage "https://github.com/lytsing/mytget"
   url "https://github.com/lytsing/mytget/archive/v1.1.2.tar.gz"
   version "1.1.2"
@@ -9,7 +8,6 @@ class Mytget < Formula
   depends_on "cmake" => :build
 
   def install
-
     system "cmake", ".", *std_cmake_args
     system "make", "install"
   end
@@ -18,4 +16,3 @@ class Mytget < Formula
     system bin/"mytget", "https://google.com"
   end
 end
-
